@@ -1,0 +1,314 @@
+/* GDS GO – Responsive
+   Premium spacing & type across Tablet / Desktop
+*/
+
+/* Tablet */
+@media (min-width: 48rem) {
+  .hero {
+    padding:
+      max(6rem, 17svh)
+      var(--space-lg)
+      max(4.5rem, 13svh);
+  }
+
+  .hero__inner {
+    max-width: 40rem;
+  }
+
+  .hero__brand {
+    margin-bottom: 1.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    color: #6b7280;
+  }
+
+  .hero__lead {
+    margin-top: 0.25rem;
+    margin-bottom: 2.5rem;
+    max-width: 26rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111111;
+  }
+
+  .hero__headline {
+    max-width: 24rem;
+    font-size: clamp(2.375rem, 4.2vw, 3.125rem);
+    font-weight: 700;
+    line-height: 1.16;
+    margin-bottom: 2.25rem;
+  }
+
+  .hero__description {
+    max-width: 24rem;
+    font-size: 1.1875rem; /* ~19px */
+    line-height: 1.8;
+    color: #6b7280;
+    margin-bottom: 4rem;
+  }
+
+  .hero__scroll-label {
+    font-size: 0.75rem;
+  }
+
+  .trust {
+    max-width: 24rem;
+    padding: 0 var(--space-lg) var(--space-2xl);
+    font-size: 0.875rem;
+    line-height: 1.9;
+  }
+
+  .services {
+    padding: 3rem var(--space-lg) var(--space-3xl);
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.25rem;
+  }
+
+  .service-card__body {
+    padding: 0 1.625rem;
+  }
+
+  .service-card__title {
+    font-size: 1.375rem;
+  }
+
+  .service-card__text {
+    font-size: 0.9375rem;
+  }
+
+  .cta {
+    padding: var(--space-3xl) var(--space-lg) calc(var(--space-3xl) + 1rem);
+  }
+
+  .cta__inner {
+    max-width: 32rem;
+  }
+
+  .cta__title {
+    font-size: clamp(1.875rem, 3.2vw, 2.375rem);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.03em;
+  }
+
+  .cta__desc {
+    max-width: 22rem;
+    font-size: 1.125rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .cta__actions {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+    gap: 0.875rem;
+  }
+
+  .cta__btn {
+    min-width: 11.25rem;
+    min-height: 3.25rem;
+    padding: 0.9375rem 1.75rem;
+    font-size: 0.9875rem;
+  }
+
+  .site-footer {
+    padding: var(--space-2xl) var(--space-lg) var(--space-xl);
+  }
+
+  .site-footer__inner {
+    max-width: 24rem;
+  }
+
+  .site-footer__brand {
+    font-size: 0.875rem;
+    margin-bottom: 1.125rem;
+  }
+
+  .site-footer__address {
+    font-size: 0.875rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .site-footer__phone {
+    margin-bottom: 3.25rem;
+    font-size: 0.875rem;
+  }
+
+  .site-footer__note {
+    font-size: 0.75rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  .hero {
+    padding:
+      max(7rem, 18svh)
+      var(--space-2xl)
+      max(5.5rem, 14svh);
+  }
+
+  .hero__brand {
+    margin-bottom: 2rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+  }
+
+  .hero__lead {
+    margin-bottom: 2.75rem;
+    max-width: 28rem;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    color: #111111;
+  }
+
+  .hero__headline {
+    max-width: 28rem;
+    font-size: clamp(2.875rem, 3.6vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero__description {
+    max-width: 26rem;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.8;
+    color: #6b7280;
+    margin-bottom: 4.5rem;
+  }
+
+  .hero__scroll-label {
+    font-size: 0.75rem;
+  }
+
+  .trust {
+    max-width: 26rem;
+    padding: 0 var(--space-2xl) 7.5rem;
+    font-size: 0.9375rem;
+  }
+
+  .services {
+    padding: 2rem var(--space-2xl) 12rem;
+  }
+
+  .services__grid {
+    gap: 3.5rem;
+  }
+
+  .service-card__body {
+    padding: 0 1.875rem;
+  }
+
+  .service-card__title {
+    font-size: 1.5rem;
+    letter-spacing: -0.032em;
+  }
+
+  .service-card__text {
+    font-size: 0.9875rem;
+  }
+
+  .cta {
+    padding: 12rem var(--space-2xl) 13rem;
+  }
+
+  .cta__title {
+    font-size: clamp(2.125rem, 2.8vw, 2.625rem);
+  }
+
+  .cta__desc {
+    max-width: 24rem;
+    font-size: 1.1875rem;
+    margin-bottom: 3.75rem;
+  }
+
+  .cta__actions {
+    gap: 1rem;
+  }
+
+  .cta__btn {
+    min-width: 12.25rem;
+  }
+
+  .site-footer {
+    padding: 8.5rem var(--space-2xl) 7rem;
+  }
+
+  .site-footer__note {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .hero {
+    padding-top: 3.5rem;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero__headline {
+    font-size: 1.8125rem;
+    max-width: 18rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    margin-bottom: 2.75rem;
+    max-width: 18rem;
+  }
+
+  .hero__scroll-label {
+    font-size: 0.625rem;
+  }
+
+  .trust {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: var(--space-xl);
+    font-size: 0.75rem;
+  }
+
+  .services,
+  .cta,
+  .site-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .services__grid {
+    gap: 2.5rem;
+  }
+
+  .service-card__body {
+    padding: 0 1.25rem;
+  }
+
+  .service-card__title {
+    font-size: 1.125rem;
+  }
+
+  .service-card__text {
+    font-size: 0.8125rem;
+  }
+
+  .cta__title {
+    font-size: 1.5rem;
+  }
+
+  .cta__desc {
+    font-size: 1rem;
+  }
+
+  .cta__btn {
+    min-height: 3rem;
+    font-size: 0.875rem;
+  }
+}
