@@ -115,33 +115,6 @@
     padding: 0.9375rem 1.75rem;
     font-size: 0.9875rem;
   }
-
-  .site-footer {
-    padding: var(--space-2xl) var(--space-lg) var(--space-xl);
-  }
-
-  .site-footer__inner {
-    max-width: 24rem;
-  }
-
-  .site-footer__brand {
-    font-size: 0.875rem;
-    margin-bottom: 1.125rem;
-  }
-
-  .site-footer__address {
-    font-size: 0.875rem;
-    margin-bottom: 0.875rem;
-  }
-
-  .site-footer__phone {
-    margin-bottom: 3.25rem;
-    font-size: 0.875rem;
-  }
-
-  .site-footer__note {
-    font-size: 0.75rem;
-  }
 }
 
 /* Desktop */
@@ -236,14 +209,6 @@
   .cta__btn {
     min-width: 12.25rem;
   }
-
-  .site-footer {
-    padding: 8.5rem var(--space-2xl) 7rem;
-  }
-
-  .site-footer__note {
-    font-size: 0.75rem;
-  }
 }
 
 /* Small phones */
@@ -277,8 +242,7 @@
   }
 
   .services,
-  .cta,
-  .site-footer {
+  .cta {
     padding-left: 16px;
     padding-right: 16px;
   }

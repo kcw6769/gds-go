@@ -1,0 +1,122 @@
+/* GDS 표준 Footer (shared)
+   GO · 랜딩페이지 공통 컴포넌트
+
+   사용:
+   1) <link rel="stylesheet" href="(상대경로)/shared/footer.css">
+   2) shared/footer.html 마크업을 </body> 직전에 붙여넣기
+
+   클래스명·문구·디자인은 변경하지 않습니다.
+   CSS 변수는 페이지 :root를 쓰고, 없으면 fallback으로 동일하게 보입니다.
+*/
+
+.site-footer {
+  padding: var(--space-2xl, 8rem) 20px calc(var(--space-xl, 5rem) + env(safe-area-inset-bottom, 0px));
+  background-color: var(--color-bg, #ffffff);
+  border-top: 1px solid var(--color-border, #ececef);
+  text-align: center;
+  font-family: inherit;
+}
+
+.site-footer__inner {
+  width: 100%;
+  max-width: 22rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-footer__brand {
+  margin-bottom: 1rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--color-text, #1d1d1f);
+}
+
+.site-footer__address {
+  margin-bottom: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: var(--color-text-tertiary, #86868b);
+}
+
+.site-footer__phone {
+  display: inline-block;
+  margin-bottom: 2.75rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--color-text-secondary, #6e6e73);
+  text-decoration: none;
+  transition: opacity var(--transition, 0.35s cubic-bezier(0.25, 0.1, 0.25, 1));
+}
+
+.site-footer__phone:hover {
+  opacity: 0.65;
+}
+
+.site-footer__note {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  color: var(--color-text-tertiary, #86868b);
+  opacity: 0.85;
+}
+
+.site-footer__copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #9CA3AF;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+/* Tablet */
+@media (min-width: 48rem) {
+  .site-footer {
+    padding: var(--space-2xl, 8rem) var(--space-lg, 2.75rem) var(--space-xl, 5rem);
+  }
+
+  .site-footer__inner {
+    max-width: 24rem;
+  }
+
+  .site-footer__brand {
+    font-size: 0.875rem;
+    margin-bottom: 1.125rem;
+  }
+
+  .site-footer__address {
+    font-size: 0.875rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .site-footer__phone {
+    margin-bottom: 3.25rem;
+    font-size: 0.875rem;
+  }
+
+  .site-footer__note {
+    font-size: 0.75rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 64rem) {
+  .site-footer {
+    padding: 8.5rem var(--space-2xl, 8rem) 7rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .site-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

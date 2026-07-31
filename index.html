@@ -1,58 +1,153 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <!-- ===== 1) SEO 공통 (shared/seo/common.html · 수정 금지) ===== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>지디에스 성형외과 | GDS Plastic Surgery | 진료 안내</title>
-  <meta name="description" content="GDS성형외과 진료 Navigation Hub. 큰 점 제거, 스킨텍, 귀 켈로이드, 안검 황색종, 하안검, 귓볼 복원 등 대표원장이 작성한 진료 안내 페이지로 바로 이동합니다.">
-  <meta name="keywords" content="지디에스 성형외과, GDS성형외과, GDS Plastic Surgery, GDS GO, 성형외과 진료안내, 강남 성형외과">
-  <meta name="author" content="GDS성형외과">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://gdsprs.com/go/">
+  <meta name="author" content="지디에스 성형외과">
+  <link rel="icon" href="https://gdsprs.com/go/assets/logo/logo.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="지디에스 성형외과">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
 
+  <!-- ===== 2) SEO 페이지별 (shared/seo/page.html · 여기만 수정) ===== -->
+  <!-- 1. title -->
+  <title>지디에스 성형외과 | GDS Plastic Surgery | 진료 안내</title>
+  <!-- 2. description -->
+  <meta name="description" content="GDS성형외과 진료 Navigation Hub. 큰 점 제거, 스킨텍, 귀 켈로이드, 안검 황색종, 하안검, 귓볼 복원 등 대표원장이 작성한 진료 안내 페이지로 바로 이동합니다.">
+  <!-- 3. canonical (+ og:url) -->
+  <link rel="canonical" href="https://gdsprs.com/go/">
+  <meta property="og:url" content="https://gdsprs.com/go/">
+  <!-- 4 · 5. og:title / og:description -->
   <meta property="og:title" content="GDS GO | 진료 안내 허브 | GDS성형외과">
   <meta property="og:description" content="어떤 진료를 찾고 계신가요? 대표원장이 직접 작성한 진료 안내 페이지로 바로 이동하세요.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gdsprs.com/go/">
-  <meta property="og:site_name" content="GDS성형외과">
-  <meta property="og:locale" content="ko_KR">
-
-  <meta name="twitter:card" content="summary">
+  <!-- 6. og:image -->
+  <meta property="og:image" content="https://gdsprs.com/go/assets/images/big-nevus.jpg">
+  <!-- Twitter = OG 동일값 -->
   <meta name="twitter:title" content="GDS GO | 진료 안내 허브 | GDS성형외과">
   <meta name="twitter:description" content="어떤 진료를 찾고 계신가요? 대표원장이 직접 작성한 진료 안내 페이지로 바로 이동하세요.">
-
+  <meta name="twitter:image" content="https://gdsprs.com/go/assets/images/big-nevus.jpg">
+  <!-- WebPage Schema (title · description · canonical 재사용) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "GDS GO",
-    "description": "GDS성형외과 진료 Navigation Hub. 대표원장이 직접 작성한 진료 안내 페이지로 바로 이동합니다.",
+    "@id": "https://gdsprs.com/go/#webpage",
+    "name": "지디에스 성형외과 | GDS Plastic Surgery | 진료 안내",
+    "description": "GDS성형외과 진료 Navigation Hub. 큰 점 제거, 스킨텍, 귀 켈로이드, 안검 황색종, 하안검, 귓볼 복원 등 대표원장이 작성한 진료 안내 페이지로 바로 이동합니다.",
     "url": "https://gdsprs.com/go/",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "GDS성형외과",
-      "url": "https://gdsprs.com/"
-    },
-    "publisher": {
-      "@type": "MedicalBusiness",
-      "name": "GDS성형외과",
-      "url": "https://gdsprs.com/",
-      "telephone": "02-573-7515",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "강남대로 439 유화빌딩 7층",
-        "addressLocality": "서초구",
-        "addressRegion": "서울특별시",
-        "addressCountry": "KR"
-      }
-    }
+    "inLanguage": "ko-KR",
+    "isPartOf": { "@id": "https://gdsprs.com/#website" },
+    "about": { "@id": "https://gdsprs.com/#clinic" },
+    "publisher": { "@id": "https://gdsprs.com/#organization" }
   }
+  </script>
+
+  <!-- ===== 3) 공통 Schema (shared/seo/schema-organization.html · 수정 금지) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gdsprs.com/#organization",
+        "name": "지디에스 성형외과",
+        "alternateName": [
+          "GDS성형외과",
+          "GDS Plastic Surgery",
+          "GDS 성형외과"
+        ],
+        "url": "https://gdsprs.com/",
+        "telephone": "+82-2-573-7515",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "강남대로 439 유화빌딩 7층",
+          "addressLocality": "서초구",
+          "addressRegion": "서울특별시",
+          "postalCode": "06654",
+          "addressCountry": "KR"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://gdsprs.com/#clinic",
+        "name": "지디에스 성형외과",
+        "alternateName": [
+          "GDS성형외과",
+          "GDS Plastic Surgery"
+        ],
+        "url": "https://gdsprs.com/",
+        "telephone": "+82-2-573-7515",
+        "medicalSpecialty": "PlasticSurgery",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "강남대로 439 유화빌딩 7층",
+          "addressLocality": "서초구",
+          "addressRegion": "서울특별시",
+          "postalCode": "06654",
+          "addressCountry": "KR"
+        },
+        "parentOrganization": {
+          "@id": "https://gdsprs.com/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gdsprs.com/#website",
+        "name": "지디에스 성형외과",
+        "url": "https://gdsprs.com/",
+        "inLanguage": "ko-KR",
+        "publisher": {
+          "@id": "https://gdsprs.com/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== 4) Breadcrumb (선택 · GO는 2단계) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://gdsprs.com/go/#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "홈",
+        "item": "https://gdsprs.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "GDS GO",
+        "item": "https://gdsprs.com/go/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MK0LN1YMXJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MK0LN1YMXJ', {
+      send_page_view: true,
+      debug_mode: /(?:\?|&)(?:debug_mode|ga_debug)=1(?:&|$)/.test(location.search)
+    });
   </script>
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="shared/brand.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="shared/footer.css">
 </head>
 <body>
   <main>
@@ -88,7 +183,13 @@
         <ul class="services__grid">
           <!-- service-card: 새 진료 추가 시 li.services__item 블록을 복제하세요 -->
           <li class="services__item">
-            <a class="service-card service-card--big-nevus" href="/big-nevus">
+            <a
+              class="service-card service-card--big-nevus"
+              href="/big-nevus/"
+              data-track="service"
+              data-service="big_nevus"
+              data-location="go_page"
+            >
               <div class="service-card__media">
                 <img
                   class="service-card__image"
@@ -109,7 +210,13 @@
           </li>
 
           <li class="services__item">
-            <a class="service-card service-card--skintag" href="#">
+            <a
+              class="service-card service-card--skintag"
+              href="#"
+              data-track="service"
+              data-service="skintag"
+              data-location="go_page"
+            >
               <div class="service-card__media">
                 <img
                   class="service-card__image"
@@ -130,7 +237,13 @@
           </li>
 
           <li class="services__item">
-            <a class="service-card service-card--keloid" href="#">
+            <a
+              class="service-card service-card--keloid"
+              href="#"
+              data-track="service"
+              data-service="keloid"
+              data-location="go_page"
+            >
               <div class="service-card__media">
                 <img
                   class="service-card__image"
@@ -151,7 +264,13 @@
           </li>
 
           <li class="services__item">
-            <a class="service-card service-card--xanthelasma" href="#">
+            <a
+              class="service-card service-card--xanthelasma"
+              href="#"
+              data-track="service"
+              data-service="xanthelasma"
+              data-location="go_page"
+            >
               <div class="service-card__media">
                 <img
                   class="service-card__image"
@@ -172,7 +291,13 @@
           </li>
 
           <li class="services__item">
-            <a class="service-card service-card--lower-eyelid" href="#">
+            <a
+              class="service-card service-card--lower-eyelid"
+              href="#"
+              data-track="service"
+              data-service="lower_eyelid"
+              data-location="go_page"
+            >
               <div class="service-card__media">
                 <img
                   class="service-card__image"
@@ -193,7 +318,13 @@
           </li>
 
           <li class="services__item">
-            <a class="service-card service-card--earlobe" href="#">
+            <a
+              class="service-card service-card--earlobe"
+              href="#"
+              data-track="service"
+              data-service="earlobe"
+              data-location="go_page"
+            >
               <div class="service-card__media">
                 <img
                   class="service-card__image"
@@ -233,10 +364,18 @@
             class="cta__btn cta__btn--kakao"
             target="_blank"
             rel="noopener noreferrer"
+            data-track="cta"
+            data-location="go_cta"
+            data-source="go_cta"
           >
             카카오톡 상담하기
           </a>
-          <a href="tel:02-573-7515" class="cta__btn cta__btn--phone">
+          <a
+            href="tel:02-573-7515"
+            class="cta__btn cta__btn--phone"
+            data-track="cta"
+            data-location="go_phone"
+          >
             전화 상담하기
           </a>
         </div>
@@ -244,6 +383,7 @@
     </section>
   </main>
 
+  <!-- 표준 Footer — 원본: shared/footer.html / 스타일: shared/footer.css -->
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p class="site-footer__brand">지디에스 성형외과</p>
@@ -257,7 +397,12 @@
         대표원장이 직접 상담부터<br>
         수술, 경과관리까지 함께합니다.
       </p>
+      <p class="site-footer__copyright">
+        Copyright © 2026 지디에스 성형외과. All Rights Reserved.
+      </p>
     </div>
   </footer>
+
+  <script src="js/analytics.js?v=20260731a" defer></script>
 </body>
 </html>

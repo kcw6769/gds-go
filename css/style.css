@@ -15,6 +15,12 @@
   --color-card-shadow: rgba(29, 29, 31, 0.035);
   --color-card-shadow-hover: rgba(29, 29, 31, 0.09);
 
+  /* GDS brand (shared/brand.css 와 동일 · 랜딩 재사용) */
+  --gds-primary: #2563EB;
+  --gds-primary-hover: #1D4ED8;
+  --gds-primary-light: #DBEAFE;
+  --gds-text: #111827;
+
   --font-family: "Pretendard", -apple-system, BlinkMacSystemFont,
     "Apple SD Gothic Neo", "Segoe UI", sans-serif;
 
@@ -424,80 +430,25 @@ a {
 }
 
 .cta__btn--kakao {
-  color: #ffffff;
-  background-color: #1d1d1f;
+  color: #FFFFFF;
+  background-color: var(--gds-primary);
+  border: none;
 }
 
 .cta__btn--kakao:hover {
-  opacity: 0.88;
+  opacity: 1;
+  background-color: var(--gds-primary-hover);
 }
 
 .cta__btn--phone {
-  color: #1d1d1f;
-  background-color: #ffffff;
-  border: 1px solid #1d1d1f;
+  color: var(--gds-primary);
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--gds-primary);
 }
 
 .cta__btn--phone:hover {
   opacity: 1;
-  background-color: #fafafa;
-}
-
-/* ── Footer ──
-   Minimal · quiet
-*/
-.site-footer {
-  padding: var(--space-2xl) 20px calc(var(--space-xl) + env(safe-area-inset-bottom, 0px));
-  background-color: var(--color-bg);
-  border-top: 1px solid var(--color-border);
-  text-align: center;
-}
-
-.site-footer__inner {
-  width: 100%;
-  max-width: 22rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.site-footer__brand {
-  margin-bottom: 1rem;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--color-text);
-}
-
-.site-footer__address {
-  margin-bottom: 0.75rem;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: -0.01em;
-  color: var(--color-text-tertiary);
-}
-
-.site-footer__phone {
-  display: inline-block;
-  margin-bottom: 2.75rem;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  color: var(--color-text-secondary);
-  transition: opacity var(--transition);
-}
-
-.site-footer__phone:hover {
-  opacity: 0.65;
-}
-
-.site-footer__note {
-  font-size: 0.6875rem;
-  font-weight: 400;
-  line-height: 1.8;
-  letter-spacing: -0.01em;
-  color: var(--color-text-tertiary);
-  opacity: 0.85;
+  color: #FFFFFF;
+  background-color: var(--gds-primary);
+  border-color: var(--gds-primary);
 }

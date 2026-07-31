@@ -1,0 +1,298 @@
+/* ============================================================================
+   GDS 공통 상담 CTA
+   출처: 큰점 랜딩 closing-cta + kakao-cta
+   디자인·클래스명은 변경하지 않습니다.
+   ============================================================================ */
+
+/* ── Kakao CTA Button ── */
+.kakao-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  padding: 0.875rem 1.75rem;
+  font-family: var(--font-family, "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  background-color: var(--gds-primary, #2563EB);
+  border: none;
+  border-radius: 999px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 18px 44px rgba(37, 99, 235, 0.2);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.kakao-cta:hover {
+  transform: translateY(-3px);
+  background-color: var(--gds-primary-hover, #1D4ED8);
+  box-shadow: 0 24px 54px rgba(37, 99, 235, 0.26);
+}
+
+.kakao-cta:active {
+  transform: translateY(-1px);
+  background-color: #1e40af;
+}
+
+.kakao-cta:focus-visible {
+  outline: 2px solid var(--gds-primary, #2563EB);
+  outline-offset: 4px;
+}
+
+/* ── Closing CTA Section ── */
+.closing-cta {
+  background-color: #ffffff;
+  padding: 160px var(--space-md, 1.5rem) 120px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.closing-cta__inner {
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.closing-cta__eyebrow {
+  margin-bottom: 0.875rem;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  color: #b8c3d7;
+  text-transform: uppercase;
+}
+
+.closing-cta__title {
+  font-size: clamp(1.75rem, 6.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: var(--color-text, #1d1d1f);
+  margin-bottom: 1rem;
+}
+
+.closing-cta__description {
+  max-width: 25rem;
+  margin: 0 auto 2rem;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
+  color: var(--color-text-secondary, #6e6e73);
+}
+
+.closing-cta__button {
+  width: 100%;
+  max-width: 21rem;
+}
+
+.closing-cta__hint {
+  margin: 1.25rem auto 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: #8e99ac;
+}
+
+.closing-cta__phone-block {
+  margin-top: 50px;
+}
+
+.closing-cta__divider {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.closing-cta__divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #e8edf4;
+}
+
+.closing-cta__divider-text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #94a3b8;
+  white-space: nowrap;
+}
+
+.closing-cta__phone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-bottom: 0.875rem;
+  color: var(--color-text, #1d1d1f);
+  text-decoration: none;
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  transition: color 0.25s ease;
+}
+
+.closing-cta__phone:hover {
+  color: var(--gds-primary, #2563EB);
+}
+
+.closing-cta__phone-icon {
+  color: var(--gds-primary, #2563EB);
+  flex-shrink: 0;
+}
+
+.closing-cta__address {
+  font-style: normal;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: var(--color-text-secondary, #6e6e73);
+}
+
+.closing-cta__trust {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.75rem;
+  padding: 0;
+}
+
+.closing-cta__trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: #475569;
+}
+
+.closing-cta__trust-icon {
+  color: #3b82f6;
+  flex-shrink: 0;
+}
+
+/* Tablet */
+@media (min-width: 48rem) {
+  .kakao-cta {
+    min-height: 60px;
+    padding: 1rem 2.25rem;
+    font-size: 1.125rem;
+  }
+
+  .closing-cta {
+    padding: 160px var(--space-lg, 2.75rem) 120px;
+  }
+
+  .closing-cta__inner {
+    max-width: 35rem;
+  }
+
+  .closing-cta__description {
+    max-width: 28rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 47.9375rem) {
+  .closing-cta {
+    width: 100%;
+    max-width: 100%;
+    padding: 4.5rem 20px calc(5rem + env(safe-area-inset-bottom, 0px));
+    box-sizing: border-box;
+    overflow: visible;
+    height: auto;
+    max-height: none;
+  }
+
+  .closing-cta__inner {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    height: auto;
+    max-height: none;
+  }
+
+  .closing-cta__title {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    font-size: clamp(1.5rem, 6.5vw, 2rem);
+  }
+
+  .closing-cta__description {
+    max-width: 100%;
+  }
+
+  .kakao-cta,
+  .closing-cta__button {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 54px;
+    height: auto;
+    padding: 0.875rem 1.25rem;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .kakao-cta:hover,
+  .closing-cta__button:hover {
+    transform: none;
+  }
+
+  .closing-cta__phone-block {
+    width: 100%;
+  }
+
+  .closing-cta__phone {
+    font-size: clamp(1.375rem, 6vw, 1.75rem);
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .closing-cta__trust {
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .closing-cta__trust-item {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kakao-cta {
+    transition: background-color 0.25s ease;
+  }
+
+  .kakao-cta:hover {
+    transform: none;
+  }
+
+  .closing-cta__phone {
+    transition: color 0.25s ease;
+  }
+}

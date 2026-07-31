@@ -1,0 +1,96 @@
+<!--
+  ============================================================================
+  GDS 공통 상담 CTA
+  파일: shared/cta.html · shared/cta.css
+
+  사용법
+  1. <link rel="stylesheet" href="(상대경로)/shared/brand.css">  ← 브랜드 컬러
+  2. <link rel="stylesheet" href="(상대경로)/shared/cta.css">
+  3. 아래 마크업을 Footer 위(또는 원하는 위치)에 붙여넣기
+  4. 페이지별로 수정하는 항목
+     - 제목 (closing-cta__title)
+     - 설명 (closing-cta__description)
+     - 상담 버튼 문구 (closing-cta__button)
+     - 힌트 문구 (closing-cta__hint) — 선택
+
+  규칙
+  - 클래스명 · 레이아웃 · 디자인은 변경하지 않습니다.
+  - 브랜드 컬러는 shared/brand.css 변수(--gds-primary 등)를 사용합니다.
+  - 카카오 상담 URL은 공통: https://pf.kakao.com/_ixehIu/chat
+  ============================================================================
+-->
+<section class="closing-cta" aria-labelledby="closing-cta-heading">
+  <div class="closing-cta__inner">
+    <p class="closing-cta__eyebrow">OUR CARE</p>
+
+    <!-- 페이지별: 제목 -->
+    <h2 id="closing-cta-heading" class="closing-cta__title">
+      큰 점으로 오래 고민하셨다면<br>
+      사진 한 장으로 확인해보세요.
+    </h2>
+
+    <!-- 페이지별: 설명 -->
+    <p class="closing-cta__description">
+      사진을 보내주시면<br>
+      제거 가능 여부에 대해 상담을 도와드립니다.
+    </p>
+
+    <!-- 페이지별: 상담 버튼 문구 -->
+    <a
+      href="https://pf.kakao.com/_ixehIu/chat"
+      class="closing-cta__button kakao-cta"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📷 사진으로 제거 가능 여부 확인하기
+    </a>
+
+    <!-- 페이지별: 힌트 (선택) -->
+    <p class="closing-cta__hint">
+      사진을 보내주시면<br>
+      제거 가능 여부에 대해 상담을 도와드립니다.
+    </p>
+
+    <div class="closing-cta__phone-block">
+      <div class="closing-cta__divider" aria-hidden="true">
+        <span class="closing-cta__divider-line"></span>
+        <span class="closing-cta__divider-text">또는</span>
+        <span class="closing-cta__divider-line"></span>
+      </div>
+
+      <a href="tel:02-573-7515" class="closing-cta__phone">
+        <svg class="closing-cta__phone-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>02-573-7515</span>
+      </a>
+
+      <address class="closing-cta__address">
+        서울특별시 서초구 강남대로 439<br>
+        유화빌딩 7층<br>
+        지디에스 성형외과
+      </address>
+    </div>
+
+    <ul class="closing-cta__trust">
+      <li class="closing-cta__trust-item">
+        <svg class="closing-cta__trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>상담만 받아보셔도 됩니다.</span>
+      </li>
+      <li class="closing-cta__trust-item">
+        <svg class="closing-cta__trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>무리한 제거는 권하지 않습니다.</span>
+      </li>
+      <li class="closing-cta__trust-item">
+        <svg class="closing-cta__trust-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>제거 가능 여부를 안내해드립니다.</span>
+      </li>
+    </ul>
+  </div>
+</section>

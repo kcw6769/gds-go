@@ -1,0 +1,35 @@
+<!--
+  ============================================================================
+  FAQ Schema (선택) — FAQ 섹션이 있을 때만 추가
+  파일: shared/seo/schema-faq.html
+
+  수정: Question name / Answer text 만
+  화면 FAQ 문구와 동일하게 맞출 것
+  ============================================================================
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "__CANONICAL_URL__#faq",
+  "inLanguage": "ko-KR",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "__QUESTION_1__",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "__ANSWER_1__"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "__QUESTION_2__",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "__ANSWER_2__"
+      }
+    }
+  ]
+}
+</script>

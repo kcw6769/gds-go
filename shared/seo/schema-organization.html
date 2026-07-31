@@ -1,0 +1,69 @@
+<!--
+  ============================================================================
+  Organization · MedicalClinic · WebSite (공통 · 수정 금지)
+  파일: shared/seo/schema-organization.html
+
+  모든 페이지에 그대로 포함합니다.
+  병원 정보 변경 시에만 이 파일을 수정합니다.
+  ============================================================================
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://gdsprs.com/#organization",
+      "name": "지디에스 성형외과",
+      "alternateName": [
+        "GDS성형외과",
+        "GDS Plastic Surgery",
+        "GDS 성형외과"
+      ],
+      "url": "https://gdsprs.com/",
+      "telephone": "+82-2-573-7515",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "강남대로 439 유화빌딩 7층",
+        "addressLocality": "서초구",
+        "addressRegion": "서울특별시",
+        "postalCode": "06654",
+        "addressCountry": "KR"
+      }
+    },
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://gdsprs.com/#clinic",
+      "name": "지디에스 성형외과",
+      "alternateName": [
+        "GDS성형외과",
+        "GDS Plastic Surgery"
+      ],
+      "url": "https://gdsprs.com/",
+      "telephone": "+82-2-573-7515",
+      "medicalSpecialty": "PlasticSurgery",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "강남대로 439 유화빌딩 7층",
+        "addressLocality": "서초구",
+        "addressRegion": "서울특별시",
+        "postalCode": "06654",
+        "addressCountry": "KR"
+      },
+      "parentOrganization": {
+        "@id": "https://gdsprs.com/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://gdsprs.com/#website",
+      "name": "지디에스 성형외과",
+      "url": "https://gdsprs.com/",
+      "inLanguage": "ko-KR",
+      "publisher": {
+        "@id": "https://gdsprs.com/#organization"
+      }
+    }
+  ]
+}
+</script>
