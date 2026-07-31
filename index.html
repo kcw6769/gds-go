@@ -137,7 +137,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MK0LN1YMXJ', {
-      send_page_view: true,
+      send_page_view: false,
       debug_mode: /(?:\?|&)(?:debug_mode|ga_debug)=1(?:&|$)/.test(location.search)
     });
   </script>
@@ -149,7 +149,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="shared/footer.css">
 </head>
-<body>
+<body data-page-type="go" data-service="go">
   <main>
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__inner">
@@ -373,7 +373,7 @@
           <a
             href="tel:02-573-7515"
             class="cta__btn cta__btn--phone"
-            data-track="cta"
+            data-track="phone"
             data-location="go_phone"
           >
             전화 상담하기
@@ -403,6 +403,21 @@
     </div>
   </footer>
 
-  <script src="js/analytics.js?v=20260731a" defer></script>
+  <!-- GA4: 반드시 js/analytics.js 업로드 (404 시 script.js 폴백) -->
+  <script>
+    (function () {
+      function load(src, onerror) {
+        var s = document.createElement("script");
+        s.src = src;
+        s.defer = true;
+        if (onerror) s.onerror = onerror;
+        document.body.appendChild(s);
+      }
+      load("js/analytics.js?v=20260731c", function () {
+        console.error("[GDS Analytics] js/analytics.js 404 — fallback js/script.js");
+        load("js/script.js?v=20260731c");
+      });
+    })();
+  </script>
 </body>
 </html>

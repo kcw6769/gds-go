@@ -1,4 +1,7 @@
 /**
+ * GDS GO — js/analytics.js 배포 폴백 복사본 (동일 Event Schema)
+ */
+/**
  * GDS Landing — GA4 공통 Event Schema (전 랜딩 · GO Hub)
  *
  * 이벤트:
@@ -47,7 +50,6 @@
     return (el.getAttribute(name) || "").trim();
   }
 
-  /** body 기준 페이지 컨텍스트 */
   function getPageContext() {
     var body = document.body;
     return {
@@ -56,12 +58,6 @@
     };
   }
 
-  /**
-   * 공통 파라미터 병합
-   * - page_type / service: body 기본값
-   * - el 의 data-service 가 있으면 service 덮어쓰기
-   * - extra 의 값이 있으면 최종 덮어쓰기 (빈 문자열은 제외)
-   */
   function buildParams(extra, el) {
     var ctx = getPageContext();
     var params = {
