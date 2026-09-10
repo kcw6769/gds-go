@@ -36,10 +36,10 @@ shared/seo/
 |---|------|------|
 | 1 | `title` | `목 큰 점 제거 \| 지디에스 성형외과` |
 | 2 | `meta description` | 진료 요약 1~2문장 (과장 금지) |
-| 3 | `canonical` / `og:url` | `https://gdsprs.com/big-nevus/` |
+| 3 | `canonical` / `og:url` | `https://www.gdsprs.com/big-nevus/` |
 | 4 | `og:title` | SNS용 제목 |
 | 5 | `og:description` | SNS용 설명 |
-| 6 | `og:image` | `https://gdsprs.com/.../og.jpg` (1200×630) |
+| 6 | `og:image` | `https://www.gdsprs.com/.../og.jpg` (1200×630) |
 
 > `twitter:*` 와 `WebPage` JSON-LD는 위 값과 동일 플레이스홀더를 쓰므로 **따로 작성하지 않습니다.**
 

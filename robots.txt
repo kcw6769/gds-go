@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gdsprs.com/go/sitemap.xml
+Sitemap: https://www.gdsprs.com/go/sitemap.xml

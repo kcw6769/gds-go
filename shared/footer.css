@@ -45,13 +45,17 @@
 
 .site-footer__phone {
   display: inline-block;
-  margin-bottom: 2.75rem;
+  margin-bottom: 0.75rem;
   font-size: 0.8125rem;
   font-weight: 400;
   letter-spacing: -0.01em;
   color: var(--color-text-secondary, #6e6e73);
   text-decoration: none;
   transition: opacity var(--transition, 0.35s cubic-bezier(0.25, 0.1, 0.25, 1));
+}
+
+.site-footer__phone + .site-footer__address {
+  margin-bottom: 2.75rem;
 }
 
 .site-footer__phone:hover {
@@ -97,8 +101,12 @@
   }
 
   .site-footer__phone {
-    margin-bottom: 3.25rem;
+    margin-bottom: 0.875rem;
     font-size: 0.875rem;
+  }
+
+  .site-footer__phone + .site-footer__address {
+    margin-bottom: 3.25rem;
   }
 
   .site-footer__note {
